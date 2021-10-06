@@ -1,0 +1,378 @@
+body {
+  font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  padding: 100px 0;
+  background-color: #FAFAFA;
+}
+
+/* Reset CSS */
+
+.mainWrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: column;
+  align-items: column;
+}
+
+h1 {
+  display: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea {
+  font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+ul, li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+span.name, .titleSpan {
+  font-size: 14px;
+  font-weight: 600;
+  color: #262626;
+}
+
+span.descSpan {
+  font-size: 12px;
+  font-weight: 400;
+  color: #828282;
+}
+span.description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #262626;
+}
+
+.profileImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Header-logo */
+.headerMenuContainer {   
+  position: fixed;
+  top: 0;
+  padding: 20px 80px;
+  width: 100vw;
+  background-color: #ffff;
+  border-bottom: 1px solid #efefef;
+  text-align: center;    
+}
+
+.headerMenuContainer strong{  
+  font-family: 'Lobster', cursive;
+  font-size: 25px;   
+}
+
+.headerGroup {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+} 
+
+.inputGroup {
+ position: relative;
+ display: block;
+ margin: 0 auto;
+ padding: 7px;
+ width: 215px;
+ height: 30px;
+ border: 1px solid #efefef; 
+ border-radius: 5px; 
+ background-color: #FAFAFA;
+ text-align: center;    
+}
+
+.inputGroup input {
+ text-align: center;
+ background-color: #FAFAFA;
+}
+
+.fa-search {
+ position: absolute;
+ left: 30%; 
+ color: #A5A7AA;
+}
+
+/* Navigation */
+.naviGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.naviIcon {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+/* Main - header */
+.articleContainer {
+  margin-top: 20px;
+  margin-left: 80px;
+  padding: 30px 0 0;
+  border: 1px solid #efefef;
+  background-color: #ffff;
+}
+
+.feedProfileContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.userProfile {
+  position: relative;
+  top: -20px;
+}
+
+.userProfile .profileImage {
+  position: relative;
+  bottom: -10px;
+  margin-right: 10px;
+}
+
+.userProfile strong {
+  font-size: 16px;
+}
+
+.fa-ellipsis-h {
+  width: 16px;
+  height: 16px;
+  color: #262626;
+}
+
+/*Comment box*/
+.commentGroup {
+  margin: 10px 0 0;
+  padding: 0 16px;
+  text-align: left;
+  background-color: #ffff;
+}
+
+.commentButtonIcon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-react {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;;
+}
+
+/* Main-Comments */
+.likedComment {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.likedComment p {
+  transform: translateY(20%);
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.replyForm {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+#replyInput {
+  width: 560px;
+  height: 18px;
+  padding: 28px 16px;
+  font-size: 14px;
+  color: #262626;
+  text-decoration: none;
+}
+
+#replyInput:focus {
+  outline: none;
+}
+
+#replyButton {
+  font-size: 14px;
+  color: #0095f6;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#replyButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* Aside */
+
+
+
+.mainRightWrap {
+  position: fixed;
+  top: 110px;
+  margin-left: 20px;
+  width: 400px;
+} 
+
+.myProfileImage {
+  width: 400px;
+  height: 56px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.myProfileImage img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.myProfileImage strong {
+  display: block;
+}
+
+.myProfileImage div {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.myProfileContent {
+  text-align: left;
+}
+
+.myProfileContent span {
+  font-size: 14px;
+} 
+
+
+/*Recommandation*/
+.recommendWrap {
+  border-radius: 3px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+
+.recommendTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.recommendTitle strong {
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8e8e8e;
+}
+
+.findAll {
+  font-size: 12px;
+  font-weight: 700;
+  color: #262626;
+}
+
+div.listWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at bottom left, #F58529 20%, #C42D91);
+}
+
+.recommendContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.recommendLists .profileImage {
+  box-sizing: content-box;
+  border: 1px solid #fff;
+}
+
+.recommendLists li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.recommendLists .recommendContent {
+  margin-top: 3px;
+}
+
+.recommendContent {
+  display: block;
+  margin: 0 0 10px 8px;
+}
+
+.recommendContent span {
+  display: block;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+.statusButton {
+  justify-self: end;
+  padding-top: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0095f6;;
+}
+/* Footer */
+.footerWrap {
+  margin-left: 20px;
+  text-align: left;
+}
+
+.footerList {
+  margin-bottom: 20px;
+}
+
+.footerListItem {
+  display: inline-block;
+}
+
+.footerListItem a {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  color: #A5A7AA;
+}
+
+.footerWrap span{
+  display: block;
+  font-size: 11px;
+  color: #A5A7AA;
+  text-align: left;  
+}
