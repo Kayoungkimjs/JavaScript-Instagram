@@ -1,8 +1,6 @@
 "use strict";
 
 const inputInfo = document.getElementsByClassName("inputGroup")[0];
-// input tag의 갯수만큼 하위 갯수에 다 걸림 console.log(inputinfo) form 하위 태그 다나와 
-//classname은 배열로 받아오는데, 복수일 수 있어 그래서 하나의 첫번째로 접근해야해서 인덱스써써 
 const button = document.getElementById("inputButton");
 
 function handleButton(buttonValid) {
@@ -11,7 +9,6 @@ function handleButton(buttonValid) {
     } else {
     button.disabled = true;
     }
-    //button.disabled = !buttonValid ? true : false;
     
     if (window.event.keyCode === 13) {
         goToMain();

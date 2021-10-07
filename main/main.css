@@ -1,20 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
-  font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #FAFAFA;
 }
 
 /* Reset CSS */
-
-.mainWrapper {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: column;
-  align-items: column;
-}
-
 h1 {
   display: none;
 }
@@ -46,6 +45,13 @@ p {
   font-size: 16px;
 }
 
+.mainWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: column;
+  align-items: column;
+}
+
 span.name, .titleSpan {
   font-size: 14px;
   font-weight: 600;
@@ -57,6 +63,7 @@ span.descSpan {
   font-weight: 400;
   color: #828282;
 }
+
 span.description {
   font-size: 14px;
   font-weight: 400;
@@ -74,7 +81,7 @@ span.description {
   position: fixed;
   top: 0;
   padding: 20px 80px;
-  width: 100vw;
+  width: 100%;
   background-color: #ffff;
   border-bottom: 1px solid #efefef;
   text-align: center;    
@@ -228,9 +235,6 @@ span.description {
 
 
 /* Aside */
-
-
-
 .mainRightWrap {
   position: fixed;
   top: 110px;
@@ -349,6 +353,7 @@ div.listWrap {
   font-weight: 700;
   color: #0095f6;;
 }
+
 /* Footer */
 .footerWrap {
   margin-left: 20px;
