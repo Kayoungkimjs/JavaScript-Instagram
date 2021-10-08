@@ -1,25 +1,26 @@
 "use strict";
 
-const replyList = document.getElementById("replyList");
 const replyInput = document.getElementById("replyInput");
 const replyButton = document.getElementById("replyButton");
 
-function addReply(replyValue) {
-    const newReply = document.createElement("li");
-    const newName = document.createElement("span");
-    const newContent = document.createElement("span");
+function addReply(value) {
+    const replyList = document.getElementById("#replyList");
+    const newLists = document.createElement("li");
+    const newContent = `<span class="name">kayoung</sapn>
+    <span class="description">${value}</span>
+    <span class="delete">x</span>`
+    
+    newLists.innerHTML = newContent;
+    deleteEvent(newLists);
+    replyList.appendChild(newLists);
 
-    newName.classList.add("name");
-    newName.innerText = "kayoung";
-    newContent.innerText = replyValue;
-
-    newReply.appendChild(newName);
-    newReply.appendChild(newContent);
-
-    replyList.appendChild(newReply);
-    replyInput.value="";
+    replyInput.value = "";
 }
 
+function deleteEvent(newLists) {
+    const deletebutton = document.querySelector(".delete");
+    deletebutton.addEventListener("click", () => newLists.remove())
+}
 
 function validateReply() {
     const replyValue = replyInput.value;

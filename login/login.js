@@ -47,7 +47,7 @@ function handleInput() {
 
 function goToMain() {
     alert("환영합니다!:)");
-    location.replace('http://127.0.0.1:5500/main/main.html')
+    location.href='http://127.0.0.1:5500/main.html'
 }
 
 const init = () => {
